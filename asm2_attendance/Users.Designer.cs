@@ -54,18 +54,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtsearch = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.grbuserin4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // grbuserin4
             // 
+            this.grbuserin4.BackColor = System.Drawing.Color.White;
             this.grbuserin4.Controls.Add(this.groupBox2);
             this.grbuserin4.Controls.Add(this.groupBox1);
             this.grbuserin4.Controls.Add(this.txtphone);
@@ -131,7 +131,7 @@
             this.groupBox1.Controls.Add(this.rbtnadmin);
             this.groupBox1.Controls.Add(this.rbtnstudent);
             this.groupBox1.Controls.Add(this.rbtnteacher);
-            this.groupBox1.Location = new System.Drawing.Point(567, 45);
+            this.groupBox1.Location = new System.Drawing.Point(746, 169);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(148, 100);
             this.groupBox1.TabIndex = 27;
@@ -251,9 +251,9 @@
             // 
             // btnedit
             // 
-            this.btnedit.Location = new System.Drawing.Point(198, 228);
+            this.btnedit.Location = new System.Drawing.Point(198, 233);
             this.btnedit.Name = "btnedit";
-            this.btnedit.Size = new System.Drawing.Size(85, 28);
+            this.btnedit.Size = new System.Drawing.Size(85, 23);
             this.btnedit.TabIndex = 12;
             this.btnedit.Text = "Edit";
             this.btnedit.UseVisualStyleBackColor = true;
@@ -271,7 +271,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(310, 150);
+            this.dateTimePicker1.Location = new System.Drawing.Point(540, 67);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 7;
@@ -279,7 +279,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(227, 150);
+            this.label6.Location = new System.Drawing.Point(564, 32);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 16);
             this.label6.TabIndex = 5;
@@ -322,6 +322,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "First Name";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(746, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(212, 141);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -333,29 +343,12 @@
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // txtsearch
-            // 
-            this.txtsearch.Location = new System.Drawing.Point(92, 321);
-            this.txtsearch.Name = "txtsearch";
-            this.txtsearch.Size = new System.Drawing.Size(100, 22);
-            this.txtsearch.TabIndex = 6;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(746, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(212, 141);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 29;
-            this.pictureBox1.TabStop = false;
-            // 
             // Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(1130, 619);
-            this.Controls.Add(this.txtsearch);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.grbuserin4);
             this.Name = "Users";
@@ -367,10 +360,9 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -391,7 +383,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.TextBox txtusername;
         private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.TextBox txtlastname;

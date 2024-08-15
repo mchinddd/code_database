@@ -70,7 +70,7 @@ namespace asm2_attendance
             cmd.Connection = sqlConnection;
             cmd.CommandText = "SELECT Role FROM Users WHERE username = @username AND password = @password";
             string username = txtuser.Text;
-            //cmd.CommandText = "SELECT Role FROM Users WHERE username = " +username ;
+            //cmd.CommandText = "SELECT Role FROM Users WHERE username = " + username;
             cmd.Parameters.AddWithValue("@username", username);
             cmd.Parameters.AddWithValue("@password", password);
 
