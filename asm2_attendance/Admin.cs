@@ -120,7 +120,7 @@ namespace asm2_attendance
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = sqlConnection;
-                cmd.CommandText = "SELECT \r\n    A.StudentID,\r\n    A.ClassID,\r\n    A.Status,\r\n    C.ClassName\r\nFROM \r\n    Attendance A\r\nJOIN \r\n    Class C\r\nON \r\n    A.ClassID = C.ClassID\r\nWHERE \r\n    C.ClassName = @className ";
+                cmd.CommandText = "SELECT \r\n C.ClassName,\r\n    A.StudentID,\r\n    A.ClassID,\r\n    A.Status\r\n    FROM \r\n    Attendance A\r\nJOIN \r\n    Class C\r\nON \r\n    A.ClassID = C.ClassID\r\nWHERE \r\n    C.ClassName = @className ";
                 cmd.Parameters.AddWithValue("className", selectedClass);
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
                 System.Data.DataTable dataTable = new System.Data.DataTable();
